@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dana Yim Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="table.css">
+    <link rel="stylesheet" media="scr" media="screen and (max-width: 530px)" href="phone.css">
+</head> 
+<body>
+    <div class="cursor"></div>
+
+    <style>
+        .navbar {
+            padding: 2px;
+            transition: transform 0.3s; /* Add a smooth transition */
+        }
+    
+        .hidden {
+            transform: translateY(-100%); /* Move the navbar up */
+        }
+    
+        /* Add a bit of space to the content to compensate for the hidden navbar */
+        .content {
+            margin-top: 50px;
+        }
+    </style>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            var navbar = document.querySelector('.navbar');
+            if (window.scrollY > 0) {
+                navbar.classList.add('hidden');
+            } else {
+                navbar.classList.remove('hidden');
+            }
+        });
+    </script>
+    
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+    
+    <div class="content">
+        <!-- Your actual content goes here -->
+    </div>
+    
+    <section id="home">
+        <div class="main">
+            <h1 class="headings">
+                <img class="responsive-image" id="houseIcon" src="dana house_.png">
+            </h1>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+
+    <section id="about" style="text-align: center;">
+        <h1 class="headings">ABOUT ME</h1>
+        
+                <h2>DANA YIM</h2>
+                <p style="margin-top: 20px; margin-left: 200px; margin-right: 200px;">
+                    Hi! Welcome to my house. I'm Dana, a student studying computer science at Boston University.
+                    I am currently seeking a summer 2024 software engineer internship!   
+                    In my house, you can find my recent software projects and blog posts about things 
+                    that interests me! 
+                   
+                </p>
+                <p style="margin-top: 20px; margin-left: 200px; margin-right: 200px;">
+                    I bring to the table a unique blend of creativity, strong communication skills, meticulous 
+                    attention to detail, and an innate ability to thrive in collaborative environments.
+                </p>
+                <h2 style="margin-top: 50px;">RANDOM FACTS ABOUT ME</h2>
+                <p style="margin-top: 20px; margin-left: 200px; margin-right: 200px;">
+                    - I am currently writing a fictional novel
+                </p>
+                <p style="margin-top: 20px; margin-left: 200px; margin-right: 200px;">
+                    - I started a fashion magazine with my brother, called MINE. 
+                </p>
+                <p style="margin-top: 20px; margin-left: 200px; margin-right: 200px;">
+                    - We believe in our potential to grow bigger and plan to make a social media out of it in the near future.
+                </p>
+                <p style="margin-top: 20px; margin-left: 200px; margin-right: 200px;">
+                    - On our Korean Instagram account, we have interesting group of followers such as Kenan Hunter, an HBO producer.
+                </p>
+               
+                <p style="margin-top: 20px; margin-left: 200px; margin-right: 200px;">
+                    - I love listening to Danny Elfman's music pretending that I am a main character in a movie
+                    on the way back home from campus. 
+                </p>
+
+                <h2 style="margin-top: 50px;">CONNECT WITH ME!</h2>
+                <p style="margin-top: 20px;">
+                    LinkedIn: <a href="https://www.linkedin.com/in/danayim1017" target="_blank">www.linkedin.com/in/danayim1017</a>
+                </p>
+                <p>
+                    Email: <a href="mailto:danayim@bu.edu">danayim@bu.edu</a>
+                </p>
+                <p>
+                    MINE: <a href="https://minegraphy.com" target="_blank">minegraphy.com</a>
+                </p> 
+                
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="projects">
+        <h1 class="headings">PROJECTS</h1>
+        <div class="blog-heading">
+            <span>My Recent Projects</span>
+        </div>
+
+        <div class="blog-container">
+
+            <div class="blog-box">
+
+                <div class="blog-img">
+                    <img src="calculator.pdf" alt="Blog"> 
+                </div>
+
+                <div class="blog-text">
+                    <span>10 October 2023</span>
+                    <a href="proj_post_1.html" class="blog-title">Calculator</a>
+                    <p>Using Java</p>
+                    <a href="proj_post_1.html">Read More</a>
+                </div>
+            </div>
+
+
+            <div class="blog-box">
+
+                <div class="blog-img">
+                    <img src="website.pdf" alt="Blog"> 
+                </div>
+
+                <div class="blog-text">
+                    <span>10 October 2023</span>
+                    <a href="proj_post_2.html" class="blog-title">Personal Website</a>
+                    <p>Using HTML, JS, and CSS</p>
+                    <a href="proj_post_2.html">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-box">
+
+                <div class="blog-img">
+                    <img src="chromeExt.pdf" alt="Blog"> 
+                </div>
+
+                <div class="blog-text">
+                    <span>10 October 2023</span>
+                    <a href="proj_post_3.html" class="blog-title">Chrome Extension</a>
+                    <p>Using HTML, JS, and CSS</p>
+                    <a href="proj_post_3.html">Read More</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="blog">
+        <h1 class="headings">BLOG</h1>
+        <div class="blog-heading">
+            <span>My Recent Posts</span>
+        </div>
+
+        <div class="blog-container">
+
+            <div class="blog-box">
+
+                <div class="blog-img">
+                    <img src="leetcode.pdf" alt="Blog"> 
+                </div>
+
+                <div class="blog-text">
+                    <span>10 October 2023</span>
+                    <a href="blog_post_1.html" class="blog-title">My Leetcode Journey</a>
+                    <p>Learning from mistakes</p>
+                    <a href="blog_post_1.html">Read More</a>
+                </div>
+            </div>
+
+
+
+
+            <div class="blog-box">
+
+                <div class="blog-img">
+                    <img src="mine_logo.pdf" alt="Blog"> 
+                </div>
+
+                <div class="blog-text">
+                    <span>27 December 2023</span>
+                    <a href="blog_post_2.html" class="blog-title">Co-Finding MINE Magazine</a>
+                    <p>Recent progress and business trip to NYC</p>
+                    <a href="blog_post_2.html">Read More</a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1 class="headings">CONTACT</h1>
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="email" name="email" class="input" placeholder="Enter Your Email">
+            <textarea name="ms" id="" cols="30" rows="10"
+            placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="SEND" id="send">
+        </form>
+    </section>
+</body>
+</html>
+
